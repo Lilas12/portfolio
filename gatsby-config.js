@@ -4,13 +4,18 @@
 module.exports = {
   siteMetadata: {
     title: `Portfolio`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [{
-    resolve: 'gatsby-source-contentful',
-    options: {
-      "accessToken": "5PvBt1UfcqeAIVGwg-bdSDON5oZeJQbArvGKlhinTNY",
-      "spaceId": "rikpv31gcm4c"
-    }
-  }, "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp"]
+  plugins: [
+    {
+      resolve: "gatsby-source-contentful",
+      options: {
+        accessToken: "mbRIH_xtMFXEuLkc8W6PCspcon6bPgnDEeeF98is2TA",
+        spaceId: "tyfv5nvhym5r",
+      },
+    },
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+  ],
 };

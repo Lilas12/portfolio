@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: sans-serif;
+  color: white;
+}
+html,
+body {
+  min-height: 100%;
+}
+body {
+  background: radial-gradient(
+    at top left,
+    rgb(193, 139, 235) 0%,
+    rgb(86, 72, 112) 100%
+  );
+  background-repeat: no-repeat;
+}
+.container {
+  margin: auto;
+  max-width: 500px;
+}
+.heading {
+  color: rebeccapurple;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+.nav-link-item {
+  padding-right: 2rem;
+}
+.nav-link-text {
+  color: black;
+}
+.site-title {
+  font-size: 3rem;
+  color: gray;
+  font-weight: 700;
+  margin: 3rem 0;
+}
+
+/* .footer p {
+  text-align: center;
+  color: #bbb;
+  margin: 40px auto;
+} */
