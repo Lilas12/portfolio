@@ -1,0 +1,13 @@
+.textabout {
+  background-color: #ba7bee;
+  color: #fff;
+  /* height: 480px;*/
+  width: 50%;
+  font-size: 15px;
+  box-shadow: 10px 10px 60px #000;
+  padding: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 100px;
+}

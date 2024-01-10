@@ -15,6 +15,8 @@ const IndexPage = ({ data }) => {
             <h1>
               <Link to={blog.slug}>{blog.title}</Link>
             </h1>
+            <h2>{blog.subtitle}</h2>
+
             <div>
               <p>{documentToReactComponents(JSON.parse(blog.info.raw))}</p>
               <img src={blog.image.file.url} alt="bild" width="200" />
@@ -31,6 +33,7 @@ export const pageQuery = graphql`
       nodes {
         slug
         title
+        subtitle
         info {
           raw
         }

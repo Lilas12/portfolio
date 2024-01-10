@@ -28,6 +28,11 @@ const Navigation = () => (
           Contact
         </Link>
       </li>
+      <li className={navLinkItem}>
+        <Link to="/category" className={navLinkText}>
+          Category
+        </Link>
+      </li>
     </ul>
   </nav>
 );
