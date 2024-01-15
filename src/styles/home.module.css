@@ -1,5 +1,8 @@
+body {
+  background-image: url(https://www.webzfusion.com/wp-content/uploads/2015/04/portfolio-background-4.gif);
+}
 .header {
-  display: grid;
+  /* display: -ms-flexbox; */
   grid-template-columns: 1fr 1fr;
   grid-gap: 40px;
   align-items: center;
@@ -12,14 +15,25 @@
 }
 .btn {
   display: inline-block;
-  background: #d42990;
-  padding: 10px 16px;
-  border-radius: 10px;
-  margin-top: 20px;
+  background: #b55dfd;
+  padding: 15px 60px;
+  border-radius: 20px;
+  margin-bottom: 20px;
   font-weight: 500;
+  color: black;
+  font-size: 17px;
 }
 
 .textstart {
-  margin: 10px;
-  initial-value: 5px;
+  background-color: #eee6f5;
+  color: #fff;
+  /* height: 480px;*/
+  width: 70%;
+  font-size: 20px;
+  box-shadow: 10px 10px 80px #000;
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 10px;
 }

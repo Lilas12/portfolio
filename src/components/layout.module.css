@@ -74,9 +74,16 @@ p {
   margin: 0 auto;
 }
 nav {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 30px auto;
+  margin: 30px auto; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: #f6f2fa;
 }
 nav .links {
   display: inline-block;
@@ -107,5 +114,5 @@ footer p {
   padding-right: 2rem;
 }
 .nav-link-text {
-  color: rgb(228, 221, 234);
+  color: rgb(3, 0, 6);
 }

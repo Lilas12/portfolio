@@ -8,23 +8,28 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 const Home = ({ data }) => {
   return (
-    <Layout pageTitle={data.contentfulStartside.title}>
+    <Layout>
       <section className={header}>
         <div className={textstart}>
           <p>
             {documentToReactComponents(
               JSON.parse(data.contentfulStartside.info.raw)
             )}
+            <img
+              src={data.contentfulStartside.image.file.url}
+              alt="bild"
+              width="60%"
+              height="200px"
+            />
           </p>
+          <Link className={btn} to="/category">
+            Mina Projekts
+          </Link>
         </div>
-        <img
-          src={data.contentfulStartside.image.file.url}
-          alt="bild"
-          width="400"
-        />
-        <Link className={btn} to="/Projects">
+
+        {/* <Link className={btn} to="/Projects">
           Portfolio Projekts
-        </Link>
+        </Link> */}
       </section>
     </Layout>
   );

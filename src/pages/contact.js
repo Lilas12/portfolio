@@ -2,12 +2,32 @@ import * as React from "react";
 import Layout from "../components/layout";
 import { graphql } from "gatsby";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import {
+  formlogin,
+  rubrik,
+  login,
+  textcontact,
+  text,
+  btnhover,
+} from "../styles/about.module.css";
+
 const ContactPage = ({ data }) => {
   return (
-    <Layout pageTitle={data.contentfulContact.title}>
-      <p>
-        {documentToReactComponents(JSON.parse(data.contentfulContact.info.raw))}
-      </p>
+    <Layout>
+      <div className={textcontact}>
+        <div className={formlogin}>
+          <h3 className={rubrik}>Kontakta mig via:</h3>
+          <div className={login}>
+            <div className={btnhover}>
+              <p className={text}>
+                {documentToReactComponents(
+                  JSON.parse(data.contentfulContact.info.raw)
+                )}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </Layout>
   );
 };

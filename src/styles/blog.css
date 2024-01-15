@@ -1,0 +1,26 @@
+.projects {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.blogTitle {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.blogContent {
+  line-height: 1.6;
+  color: #555;
+}
+
+.blogImage {
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+/* width: 20px; */
+/* height: auto; */

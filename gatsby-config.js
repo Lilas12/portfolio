@@ -3,8 +3,26 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Portfolio`,
+    // title: `Portfolio`,
     siteUrl: `https://www.yourdomain.tld`,
+    menuLinks: [
+      {
+        name: "Home",
+        link: "/",
+      },
+      {
+        name: "About",
+        link: "/about",
+      },
+      {
+        name: "Contact",
+        link: "/contact",
+      },
+      {
+        name: "Category",
+        link: "/category",
+      },
+    ],
   },
   plugins: [
     {
