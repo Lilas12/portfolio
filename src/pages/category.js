@@ -19,6 +19,7 @@ const BlogPosts = (props) => {
   return (
     <Layout>
       <div className={portfolio}>
+        <h2>Projects & Websites I've Created</h2>
         <select onChange={(e) => setSelectedCategory(e.target.value)}>
           {categories.map((category) => (
             <option key={category} value={category}>
@@ -26,17 +27,17 @@ const BlogPosts = (props) => {
             </option>
           ))}
         </select>
-        <div className={projects}>
+        <div className={portfolio}>
           {filteredPosts.map(({ node }, index) => (
-            <div key={index}>
+            <div className={projects} key={index}>
               <h1>
                 <Link to={node.slug}>{node.title}</Link>
               </h1>
-              <h2>{node.subtitle}</h2>
-              <p>{documentToReactComponents(JSON.parse(node.info.raw))}</p>
+              {/* <h2>{node.subtitle}</h2> */}
+              {/* <p>{documentToReactComponents(JSON.parse(node.info.raw))}</p> */}
 
               {/* <i>Kategori: {node.category}</i> */}
-              <img src={node.image.file.url} alt="bild" width="70%" />
+              <img src={node.image.file.url} alt="bild" width="65%" />
             </div>
           ))}
         </div>

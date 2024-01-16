@@ -15,18 +15,18 @@ const ContactPage = ({ data }) => {
   return (
     <Layout>
       <div className={textcontact}>
-        <div className={formlogin}>
-          <h3 className={rubrik}>Kontakta mig via:</h3>
-          <div className={login}>
-            <div className={btnhover}>
-              <p className={text}>
-                {documentToReactComponents(
-                  JSON.parse(data.contentfulContact.info.raw)
-                )}
-              </p>
-            </div>
-          </div>
-        </div>
+        {/* <div className={formlogin}> */}
+        <h3 className={rubrik}>Kontakta mig via:</h3>
+        {/* <div className={login}> */}
+        {/* <div className={btnhover}> */}
+        <p className={text}>
+          {documentToReactComponents(
+            JSON.parse(data.contentfulContact.info.raw)
+          )}
+        </p>
+        {/* </div> */}
+        {/* </div> */}
+        {/* </div> */}
       </div>
     </Layout>
   );

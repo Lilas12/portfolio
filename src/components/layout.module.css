@@ -82,7 +82,7 @@ nav {
   gap: 20px;
   justify-content: center;
   align-items: center;
-  height: 50px;
+  height: 90px;
   background-color: #f6f2fa;
 }
 nav .links {
@@ -108,7 +108,8 @@ footer p {
 .nav-links {
   display: flex;
   list-style: none;
-  padding-left: 0;
+  padding-left: 40px;
+  font-weight: bold;
 }
 .nav-link-item {
   padding-right: 2rem;
