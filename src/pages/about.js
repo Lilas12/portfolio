@@ -13,7 +13,7 @@ const AboutPage = ({ data }) => {
         <p className={description}>
           {documentToReactComponents(JSON.parse(data.contentfulAbout.info.raw))}
         </p>
-        <img src={data.contentfulAbout.image.file.url} alt="bild" width="80%" />
+        <img src={data.contentfulAbout.image.file.url} alt="bild" width="85%" />
       </div>
     </Layout>
   );
@@ -34,5 +34,5 @@ export const pageQuery = graphql`
     }
   }
 `;
-export const Head = () => <title>Contact Me</title>;
+export const Head = () => <title>About Me</title>;
 export default AboutPage;

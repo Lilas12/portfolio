@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { graphql } from "gatsby";
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+// import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { Link } from "gatsby";
 import Layout from "../components/layout";
 import { portfolio, projects } from "../styles/projects.module.css";

@@ -2,48 +2,25 @@
   background-color: #f6f2fa;
   color: #fff;
   /* height: 480px;*/
-  width: 70%;
+  width: 60%;
   font-size: 15px;
-  box-shadow: 10px 10px 60px #000;
-  padding: 20px;
+  box-shadow: 20px 30px 10px #000;
+  padding: 10px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  margin-top: 100px;
+  /* margin-top: 0px; */
 }
 .title {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
 }
 
 .description {
   text-align: center;
-  font-size: 17px;
+  font-size: 16px;
+  font-style: italic;
 }
-
-/* .formlogin {
-  width: 30em;
-  height: 40em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  margin-top: 60px;
-}
-
-.login {
-  width: 300px;
-  margin: auto;
-  margin: 50px;
-}
-
-/* .rubrik {
-  font-size: 30px;
-  padding: 20px;
-}  */
 
 .textcontact {
   background-color: #f6f2fa;
@@ -56,7 +33,7 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 20px;
 }
 
 .rubrik {
@@ -64,31 +41,29 @@
   padding: 20px;
 }
 
-/* .label {
-  padding-bottom: 10px;
-  color: #fff;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 25px;
-}
-.input {
-  padding: 80px;
-  border-radius: 10px;
-  box-shadow: 15px 10px 40px #000;
-  font-size: 20px;
-
-  width: 88%;
-  margin-left: auto;
-  margin-right: auto;
-  color: #000;
-} */
-
 .text {
   text-align: center;
   font-size: 22px;
   padding: 30px;
+  text-decoration: underline;
 }
 
+/* .projects {
+  display: contents;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 80px;
+  margin: 70px 10px;
+} */
+
+/* .info {
+  color: rgb(12, 12, 214);
+  font-size: 20px;
+} */
+
+/* .info:hover {
+  background-color: #af5bf8;
+  transform: scale(1.25);
+} */
 /* .btnhover {
   justify-content: center;
   align-items: center;

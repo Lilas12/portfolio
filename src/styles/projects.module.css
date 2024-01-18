@@ -7,9 +7,12 @@
   font-size: 2em;
   font-weight: 400;
 } */
-
+/* body {
+  background-image: url(https://www.webzfusion.com/wp-content/uploads/2015/04/portfolio-background-4.gif);
+} */
 .portfolio {
   text-align: center;
+  background-color: rgb(231, 230, 241);
 }
 .portfolio > h2 {
   font-size: 2em;
@@ -24,10 +27,13 @@
   font-weight: 400;
 }
 .projects {
-  display: contents;
+  display: inline-block;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 80px;
-  margin: 80px 10px;
+  /* grid-gap: 80px;
+  margin: 80px 10px; */
+  background-color: #f6f2fa;
+  margin-bottom: 20px;
+  margin: 50px;
 }
 /* .projects h3 {
   text-align: center;

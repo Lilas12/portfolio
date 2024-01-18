@@ -2,7 +2,7 @@ import * as React from "react";
 import Layout from "../components/layout";
 import { graphql } from "gatsby";
 import { Link } from "gatsby";
-import { header, btn, textstart } from "../styles/home.module.css";
+import { header, btn, textstart, description } from "../styles/home.module.css";
 
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 
@@ -11,7 +11,7 @@ const Home = ({ data }) => {
     <Layout>
       <section className={header}>
         <div className={textstart}>
-          <p>
+          <p className={description}>
             {documentToReactComponents(
               JSON.parse(data.contentfulStartside.info.raw)
             )}
@@ -23,7 +23,7 @@ const Home = ({ data }) => {
             />
           </p>
           <Link className={btn} to="/category">
-            Mina Projekts
+            My Projekts
           </Link>
         </div>
 

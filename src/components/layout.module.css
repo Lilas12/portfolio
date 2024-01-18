@@ -78,12 +78,12 @@ nav {
   grid-template-columns: 1fr 1fr;
   margin: 30px auto; */
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  /* grid-template-columns: repeat(3, 1fr);
+  gap: 20px; */
   justify-content: center;
   align-items: center;
-  height: 90px;
-  background-color: #f6f2fa;
+  height: 70px;
+  background-color: #d9d8da;
 }
 nav .links {
   display: inline-block;
@@ -97,7 +97,7 @@ nav a {
   border-bottom: 3px solid transparent;
 }
 nav a:hover {
-  border-color: rgb(63, 4, 115);
+  border-color: rgb(11, 3, 19);
 }
 footer p {
   text-align: center;
@@ -115,5 +115,5 @@ footer p {
   padding-right: 2rem;
 }
 .nav-link-text {
-  color: rgb(3, 0, 6);
+  color: rgb(4, 0, 6);
 }

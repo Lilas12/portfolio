@@ -3,30 +3,32 @@ import Layout from "../components/layout";
 import { graphql } from "gatsby";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import {
-  formlogin,
   rubrik,
-  login,
   textcontact,
   text,
-  btnhover,
+  projects,
 } from "../styles/about.module.css";
 
 const ContactPage = ({ data }) => {
   return (
     <Layout>
-      <div className={textcontact}>
-        {/* <div className={formlogin}> */}
-        <h3 className={rubrik}>Kontakta mig via:</h3>
-        {/* <div className={login}> */}
-        {/* <div className={btnhover}> */}
-        <p className={text}>
-          {documentToReactComponents(
-            JSON.parse(data.contentfulContact.info.raw)
-          )}
-        </p>
-        {/* </div> */}
-        {/* </div> */}
-        {/* </div> */}
+      <div className={projects}>
+        <div className={textcontact}>
+          {/* <h3 className={rubrik}>Contact Me</h3> */}
+          <img
+            src={data.contentfulContact.image.file.url}
+            alt="bild"
+            width="80%"
+            height="200px"
+          />
+          <div className={text}>
+            <p>
+              {documentToReactComponents(
+                JSON.parse(data.contentfulContact.info.raw)
+              )}
+            </p>
+          </div>
+        </div>
       </div>
     </Layout>
   );
@@ -38,6 +40,11 @@ export const pageQuery = graphql`
       title
       info {
         raw
+      }
+      image {
+        file {
+          url
+        }
       }
     }
   }
