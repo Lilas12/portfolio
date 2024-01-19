@@ -1,5 +1,5 @@
 import * as React from "react";
-// import { container, heading, siteTitle } from "./layout.module.css";
+
 import { useStaticQuery, graphql } from "gatsby";
 import Navigation from "./navigation";
 import Footer from "./footer";

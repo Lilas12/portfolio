@@ -1,29 +1,13 @@
 .container {
-  /* border-top: 1px solid var(--border);
-  font-size: var(--text-sm);
-  margin-top: var(--space-2xl);
-  padding: var(--space-2xl) 0;
-  padding-top: 30px;
-  text-align: right; */
   display: grid;
-  /* grid-template-columns: repeat(3, 1fr);
-  gap: 20px; */
+
   justify-content: center;
   align-items: center;
   height: 80px;
-  /* background-color: #f6f2fa; */
+
   background-color: #d9d8da;
   font-weight: bolder;
 }
-
-/* .FooterContent {
-  margin-top: 50px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-} */
 
 .container a {
   border-bottom: 1.5px solid transparent;

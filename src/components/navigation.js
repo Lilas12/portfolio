@@ -18,10 +18,6 @@ const Navigation = () => {
   return (
     <nav>
       <ul className={navLinks}>
-        {/* <li className={navLinkItem}><Link to="/" className={navLinkText}>Home</Link></li>
-<li className={navLinkItem}><Link to="/about" className={navLinkText}>About</Link></li>
-<li className={navLinkItem}><Link to="/contact" className={navLinkText}>Contact</Link></li>
-<li className={navLinkItem}><Link to="/category" className={navLinkText}>Category</Link></li> */}
         {data.site.siteMetadata.menuLinks.map((link) => (
           <li className={navLinkItem}>
             <Link className={navLinkText} to={link.link}>
